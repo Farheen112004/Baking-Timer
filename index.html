@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cutesy Baking Timer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="https://img.icons8.com/emoji/96/000000/cupcake-emoji.png" alt="Cupcake" class="cupcake-icon">
+            <h1>Baking Timer</h1>
+        </div>
+        <div class="timer-display" id="timer-display">00:00</div>
+        <div class="time-setters">
+            <input type="number" id="minutes" min="0" max="99" placeholder="MM">
+            <span>:</span>
+            <input type="number" id="seconds" min="0" max="59" placeholder="SS">
+        </div>
+        <div class="buttons">
+            <button id="start-btn">Start</button>
+            <button id="pause-btn">Pause</button>
+            <button id="reset-btn">Reset</button>
+        </div>
+        <div id="message" class="message"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

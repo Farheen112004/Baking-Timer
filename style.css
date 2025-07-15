@@ -1,0 +1,126 @@
+body {
+    background: linear-gradient(135deg, #fff3f8 0%, #ffe6e6 100%);
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive, sans-serif;
+    margin: 0;
+    height: 100vh;
+}
+
+.container {
+    max-width: 350px;
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 30px;
+    box-shadow: 0 8px 32px rgba(255, 182, 193, 0.2);
+    padding: 32px 20px 24px 20px;
+    text-align: center;
+    border: 2px solid #ffb6c1;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.cupcake-icon {
+    width: 56px;
+    height: 56px;
+    margin-bottom: 8px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2rem;
+    color: #ff69b4;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.timer-display {
+    font-size: 3.2rem;
+    font-weight: bold;
+    color: #ff69b4;
+    margin: 24px 0 12px 0;
+    background: #ffe6fa;
+    border-radius: 18px;
+    padding: 8px 0;
+    border: 1.5px dashed #ffb6c1;
+}
+
+.time-setters {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.time-setters input {
+    width: 56px;
+    padding: 8px;
+    border-radius: 12px;
+    border: 1.5px solid #ffb6c1;
+    background: #fff0f5;
+    font-size: 1.2rem;
+    color: #ff69b4;
+    text-align: center;
+    outline: none;
+}
+
+.time-setters span {
+    font-size: 1.5rem;
+    color: #ff69b4;
+    font-weight: bold;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    margin-bottom: 16px;
+}
+
+button {
+    background: linear-gradient(90deg, #ffb6c1 0%, #ff69b4 100%);
+    border: none;
+    color: #fff;
+    border-radius: 14px;
+    padding: 12px 22px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+    box-shadow: 0 3px 8px rgba(255, 182, 193, 0.12);
+}
+
+button:hover {
+    background: linear-gradient(90deg, #ff69b4 0%, #ffb6c1 100%);
+    transform: scale(1.07);
+}
+
+.message {
+    color: #ff69b4;
+    font-size: 1rem;
+    min-height: 22px;
+    margin-top: 8px;
+    font-style: italic;
+}
+
+@media (max-width: 425px) {
+    .container {
+        max-width: 95vw;
+        padding: 22px 8px 18px 8px;
+    }
+    .timer-display {
+        font-size: 2.4rem;
+    }
+    .time-setters input {
+        width: 40px;
+        font-size: 1rem;
+    }
+    button {
+        padding: 9px 12px;
+        font-size: 0.95rem;
+    }
+}
